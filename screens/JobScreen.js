@@ -8,12 +8,12 @@ import {
   Image,
 } from 'react-native';
 
-class NotificationsScreen extends React.Component {
+class JobScreen extends React.Component {
   static navigationOptions = {
-    tabBarLabel: 'Notice',
+    tabBarLabel: 'Job',
     tabBarIcon: ({ tintColor }) => (
      <Image
-       source={require('../img/notif.png')}
+       source={require('../img/job.png')}
        style={[styles.icon, {tintColor: tintColor}]}
      />
    ),
@@ -24,13 +24,13 @@ class NotificationsScreen extends React.Component {
     return (
       <Button
         onPress = { ()=> this.props.navigation.goBack()}
-        title=" Notif "
+        title=" Job "
         />
     );
   }
 }
 
-export default NotificationsScreen
+export default JobScreen
 
 const styles = StyleSheet.create ({
   icon: {

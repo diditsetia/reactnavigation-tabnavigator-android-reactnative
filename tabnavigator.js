@@ -20,24 +20,44 @@ const MyApp = TabNavigator({
    Home : {
    screen: require('./screens/HomeScreen').default,
  },
+ Job : {
+   screen: require('./screens/JobScreen').default,
+ },
+
  Notifications : {
    screen: NotificationsScreen,
  },
+ Profil : {
+   screen : require('./screens/ProfilScreen').default,
+ },
+
+ Settings: {
+   screen : require('./screens/SettingsScreen').default,
+ },
+
 },{
   tabBarPosition: 'bottom',
   animationEnabled: true,
   tabBarOptions: {
   showLabel : true,
   showIcon : true,
-  activeTintColor: '#000000',
+  activeTintColor: '#cf2b5d',
   inactiveTintColor: '#C7CCCF',
+  labelStyle: {
+
+  fontSize: 8,
+    },
+  iconStyle: {
+    marginTop : 3,
+  },
   style: {
-   backgroundColor: '#EBEDEF',
+   backgroundColor: '#ffffff',
  }, indicatorStyle : {
-   backgroundColor: '#000000',
+   backgroundColor: '#cf2b5d',
  }, tabStyle: {
+
    borderTopWidth: 1,
-   borderTopColor: '#d6d4d4',
+   borderTopColor: '#ebebf2',
 
  },
   },

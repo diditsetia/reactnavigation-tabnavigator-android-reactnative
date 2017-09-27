@@ -8,12 +8,12 @@ import {
   Image,
 } from 'react-native';
 
-class NotificationsScreen extends React.Component {
+class SettingsScreen extends React.Component {
   static navigationOptions = {
-    tabBarLabel: 'Notice',
+    tabBarLabel: 'Settings',
     tabBarIcon: ({ tintColor }) => (
      <Image
-       source={require('../img/notif.png')}
+       source={require('../img/seting.png')}
        style={[styles.icon, {tintColor: tintColor}]}
      />
    ),
@@ -24,13 +24,13 @@ class NotificationsScreen extends React.Component {
     return (
       <Button
         onPress = { ()=> this.props.navigation.goBack()}
-        title=" Notif "
+        title=" Settings "
         />
     );
   }
 }
 
-export default NotificationsScreen
+export default SettingsScreen
 
 const styles = StyleSheet.create ({
   icon: {
